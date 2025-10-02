@@ -236,7 +236,7 @@ footer{
 .roadmap{
 	display: flex;
 	justify-content:space-around;
-	
+	flex-flow:wrap;
 }
 .roadmap-card{
 	padding:50px;
