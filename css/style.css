@@ -238,6 +238,9 @@ footer{
 	justify-content:space-around;
 	flex-flow:wrap;
 }
+.roadmap-subtitle{
+	margin-bottom: 15px;
+}
 .roadmap-card{
 	padding:50px;
 	max-width: 640px;
