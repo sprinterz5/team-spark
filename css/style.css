@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: "Raleway";
+	background-color: #FFEEA1;
+	margin: 0;
+	font-weight: 400;
+	color: #111111;
+}
+header{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.starter{
+	position: relative;
+}
+.container{
+	margin: 0 auto;
+	width: 1480px;
+	padding: 0 20px;
+	max-width: 100%;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	font-size: 36px;
+	font-weight: 600;
+
+}
+.logo-text{
+	margin-left: 50px;
+}
+nav{
+	font-size: 24px;
+}
+nav a{
+	margin-left: 110px;
+}
+a{
+	text-decoration: none;
+	
+	color: #111111;
+}
+.button{
+	padding: 15px 90px;
+	border: solid 1px black;
+	transition-duration: 0.4s;
+}
+.button:hover{
+	background-color: #111111;
+	color: white;
+
+	
+}
+.president{
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	margin: 0;
+}
+
+
+.starter{
+	margin-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	grid-row-gap: 40px;
+	padding-bottom: 35px;
+}
+.starter-upper{
+	
+}
+.starter-subtitle{
+	font-size: 48px;
+}
+.starter-title{
+	font-size: 128px;
+	font-weight: 500;
+}
+.starter-lower{
+	font-size: 20px;
+}
+.collaborate{
+	background-color: white;
+	padding: 90px 0;
+}
+.collaborate-title{
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.collaborate-text{
+	font-size: 20px;
+	margin-bottom: 35px;
+
+}
+.team{
+	margin: 50px 0;
+text-align: center;
+}
+.team-title{
+	
+	margin-bottom: 10px;
+	font-size: 64px;
+	font-weight: 600;
+}
+.team-text{
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+.team-posters{
+	display: flex;
+	flex-flow: wrap;
+	column-gap: 20px;
+	grid-row-gap: 20px;	
+}
+.pre-footer{
+	background-color: #373737;
+	padding: 35px 0;
+	color: white;
+}
+.pre-footer .button{
+	border-color: white;
+	color: white;
+	transition-duration: 0.3s;
+}
+.pre-footer .button:hover{
+	background-color: white;
+	color: #111111;
+}
+.pre-footer-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.meet-title{
+	font-size: 35px;
+	font-weight: 600;
+}
+.meet-text{
+	margin: 15px 0 35px;
+	font-size: 16px;
+	font-weight: 500;
+}
+.vote-title{
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: 500;
+
+}
+.vote-text{
+	font-size: 16px;
+}
+footer{
+	background-color: #111111;
+	color: white;
+}
+.footer-inner{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
