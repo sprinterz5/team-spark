@@ -20,9 +20,7 @@ header{
         justify-content: space-between;
         align-items: center;
 }
-.starter{
-        position: relative;
-}
+
 .container{
         margin: 0 auto;
         width: 100%;
@@ -127,6 +125,7 @@ a{
 
 
 .starter{
+        position: relative;
 	margin-top: 120px;
 	display: flex;
 	flex-direction: column;
@@ -233,6 +232,10 @@ footer{
 }
 
 @media (max-width: 1024px){
+
+        .president{
+                left: 0;
+        }
         header{
                 flex-direction: column;
                 gap: 20px;
@@ -264,9 +267,14 @@ footer{
 }
 
 @media (max-width: 768px){
+        .starter{
+                
+                grid-gap: 20px;
+        }
         header{
                 align-items: stretch;
         }
+
         .logo{
                 justify-content: center;
         }
@@ -300,9 +308,12 @@ footer{
                 padding-bottom: 20px;
         }
         .president{
+                margin-top: -40px;
                 position: static;
                 order: -1;
-                margin-bottom: 20px;
+        }
+        .president img{
+                max-height: 50vh;
         }
         .starter-subtitle{
                 font-size: 28px;
@@ -335,6 +346,7 @@ footer{
 }
 
 @media (max-width: 480px){
+
         .logo{
                 font-size: 26px;
         }
