@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Team Spark</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Spark</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="header container">
 <header>
-	<div class="logo">
-		<div class="logo-img"><img src="img/logo.png"></div>
-		<div class="logo-text">Team Spark</div>
-	</div>
-	<nav>
-		<a href="#about">ABOUT</a>
-		<a href="https://t.me/team_spark_bbot" class="button">APPLY</a>
-	</nav>
+        <div class="logo">
+                <div class="logo-img"><img src="img/logo.png" alt="Team Spark logo"></div>
+                <div class="logo-text">Team Spark</div>
+        </div>
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="mobile-menu-toggle__label">Menu</span>
+                <span class="mobile-menu-toggle__icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-navigation" class="site-nav">
+                <a href="#about">ABOUT</a>
+                <a href="https://t.me/team_spark_bbot" class="button">APPLY</a>
+        </nav>
 </header>
 </div>
 <div class="containter">
 <div class="starter">
-	<div class="president">
-		<img src="img/president.png">
-	</div>
+        <div class="president">
+                <img src="img/president.png" alt="Team Spark president">
+        </div>
 	<div class="starter-upper">
 		<div class="starter-subtitle">
 			Stories to
@@ -117,8 +123,31 @@
 			<div class="authorise">Designed by Aidar Begotayev</div>
 		</div>
 	</div>
-</footer>	
+</footer>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('.site-nav');
+        if (!toggle || !nav) {
+                return;
+        }
+
+        toggle.addEventListener('click', function () {
+                const isOpen = nav.classList.toggle('is-open');
+                toggle.classList.toggle('is-open', isOpen);
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        nav.addEventListener('click', function (event) {
+                if (event.target.closest('a')) {
+                        nav.classList.remove('is-open');
+                        toggle.classList.remove('is-open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                }
+        });
+});
+</script>
 </body>
 </html>
